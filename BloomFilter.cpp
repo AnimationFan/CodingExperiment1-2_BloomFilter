@@ -104,7 +104,7 @@ int BloomFilter::get(char* str) {
 }
 
 BloomFilter::~BloomFilter() {
-	delete this->hashBuffer;
-	delete this->seed;
-	delete this->mem;
+	delete[] this->hashBuffer;
+	delete[] this->seed;
+	delete[] this->mem;
 }
